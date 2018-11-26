@@ -8,5 +8,8 @@
 
 def select_winner(passengers)
   # add the code snippet here!
-  passengers.each { |k,v| if k == :suite_a && v.start_with?('A') return v }
+  passengers.each do |k,v| 
+    if k == :suite_a && v.start_with?('A') 
+      return v 
+    end
 end
